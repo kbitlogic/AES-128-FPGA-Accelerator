@@ -1,0 +1,137 @@
+{
+  "c_function_name": "aes_decryption_blackbox",
+  "rtl_top_module_name": "aes_decryption_hls_wrapper",
+
+  "c_files": [
+    {
+      "c_file": "aes_decryption_blackbox.cpp",
+      "cflag": ""
+    }
+  ],
+
+  "rtl_files": [
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_HLS.srcs/sources_1/new/aes_decryption_hls_wrapper.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/aes_decryption_top.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_add_round_key.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_array_bit.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_bit_computation.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_key_expansion.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_mix_columns.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_sbox.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_shift_rows.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_single_column.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/inv_sub_bytes.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/g_function.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/rcon.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/rotword.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/sbox_function.v",
+    "../vivadoWorkspace/AES_DECRYPTION_HLS/AES_DECRYPTION_Project.srcs/sources_1/new/subword.v"
+  ],
+
+  "c_parameters": [
+    {
+      "c_name": "ciphertext_0",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "ciphertext_0"
+      }
+    },
+    {
+      "c_name": "ciphertext_1",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "ciphertext_1"
+      }
+    },
+    {
+      "c_name": "ciphertext_2",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "ciphertext_2"
+      }
+    },
+    {
+      "c_name": "ciphertext_3",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "ciphertext_3"
+      }
+    },
+    {
+      "c_name": "key_0",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "key_0"
+      }
+    },
+    {
+      "c_name": "key_1",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "key_1"
+      }
+    },
+    {
+      "c_name": "key_2",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "key_2"
+      }
+    },
+    {
+      "c_name": "key_3",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "data_read_in": "key_3"
+      }
+    },
+    {
+      "c_name": "plaintext_0",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "data_write_out": "plaintext_0",
+        "data_write_valid": "plaintext_ap_vld"
+      }
+    },
+    {
+      "c_name": "plaintext_1",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "data_write_out": "plaintext_1",
+        "data_write_valid": "plaintext_ap_vld"
+      }
+    },
+    {
+      "c_name": "plaintext_2",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "data_write_out": "plaintext_2",
+        "data_write_valid": "plaintext_ap_vld"
+      }
+    },
+    {
+      "c_name": "plaintext_3",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "data_write_out": "plaintext_3",
+        "data_write_valid": "plaintext_ap_vld"
+      }
+    }
+  ],
+
+  "rtl_common_signal": {
+    "module_clock": "ap_clk",
+    "module_reset": "ap_rst",
+    "module_clock_enable": "ap_ce",
+    "ap_ctrl_chain_protocol_start": "ap_start",
+    "ap_ctrl_chain_protocol_done": "ap_done",
+    "ap_ctrl_chain_protocol_ready": "ap_ready",
+    "ap_ctrl_chain_protocol_idle": "ap_idle",
+    "ap_ctrl_chain_protocol_continue": "ap_continue"
+  },
+
+  "rtl_performance": {
+    "latency": "1",
+    "II": "1"
+  }
+}
