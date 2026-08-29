@@ -17,11 +17,11 @@ The objective of using Vitis HLS is to:
 
 ## Files Included
 
-- aes_wrapper.cpp
-- aes_wrapper.hpp
-- aes_blackbox.cpp
-- aes_blackbox.hpp
-- aes_hls_wrapper.json
+- aes_decryption_wrapper.cpp
+- aes_decryption_wrapper.hpp
+- aes_decryption_blackbox.cpp
+- aes_decryption_blackbox.hpp
+- aes_decryption_blackbox.json
 - hls_config.cfg
 
 ## Implementation Procedure
@@ -57,9 +57,9 @@ This enables communication between the ARM processor and FPGA accelerator.
 
 The RTL decryption core was integrated using:
 
-- aes_blackbox.cpp
-- aes_blackbox.hpp
-- aes_hls_wrapper.json
+- aes_decryption_blackbox.cpp
+- aes_decryption_blackbox.hpp
+- aes_decryption_blackbox.json
 
 The RTL is treated as a hardware black box while Vitis HLS generates the required interfaces.
 
@@ -135,4 +135,3 @@ Verification Status: PASS ✓
 ## Author
 
 Kamalesh Parasurama
-Major Project B – High-Speed AES Encryption Engine
