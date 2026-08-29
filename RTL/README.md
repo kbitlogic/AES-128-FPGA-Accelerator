@@ -4,7 +4,6 @@ This folder contains the Register Transfer Level (RTL) implementation of the AES
 
 ## Modules Included
 - AES Encryption Core
-- AES Decryption Core
 - Key Expansion Module
 - S-Box and Inverse S-Box
 - ShiftRows and Inverse ShiftRows
