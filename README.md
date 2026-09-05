@@ -184,6 +184,14 @@ aes128-hardware-encryption-engine
 
 ---
 
+## Results
+
+| Operation | Latency (µs) | Throughput (Mbps) |
+|------------|-------------|------------------|
+| Encryption | 156.01 | 0.820 |
+| Decryption | 150.67 | 0.849 |
+
+
 # Future Work
 
 - FPGA implementation and hardware validation
@@ -198,12 +206,6 @@ aes128-hardware-encryption-engine
 # License
 
 This project is licensed under the *MIT License* 
-## Results
-
-| Operation | Latency (µs) | Throughput (Mbps) |
-|------------|-------------|------------------|
-| Encryption | 156.01 | 0.820 |
-| Decryption | 150.67 | 0.849 |
 
 ## Author
 Kamalesh Parasurama
