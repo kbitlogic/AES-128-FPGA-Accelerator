@@ -98,7 +98,7 @@ The AES encryption engine follows a hierarchical RTL implementation in Verilog H
 The Key Expansion module generates the eleven round keys required throughout the AES-128 encryption process by applying byte substitution, word rotation, round constants, and XOR operations.
 
 <p align="center">
-  <img src="images/architecture/Key Expansion of AES-128.jpeg" width="850">
+  <img src="images/architecture/Architecture of AES-128.png" width="850">
 </p>
 
 ---
