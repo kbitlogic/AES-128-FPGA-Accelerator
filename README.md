@@ -88,7 +88,7 @@ Ciphertext
 The AES encryption engine follows a hierarchical RTL implementation in Verilog HDL. The top-level module integrates the Key Expansion unit with the encryption datapath consisting of SubBytes, ShiftRows, MixColumns, and AddRoundKey transformations.
 
 <p align="center">
-  <img src="images/architecture/Architecture of AES-128" width="950">
+  <img src="images/architecture/RTL Hardware Architecture.png" width="950">
 </p>
 
 ---
@@ -150,7 +150,7 @@ The generated ciphertext matches the expected reference output exactly, confirmi
 ### Vivado Functional Simulation
 
 <p align="center">
-  <img src="images/simulation/aes_vivado_simulation.png" width="950">
+  <img src="images/architecture/Vivado Simulation.png" width="950">
 </p>
 
 ---
