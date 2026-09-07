@@ -110,7 +110,7 @@ The Key Expansion module generates the eleven round keys required throughout the
 Generates the complete AES-128 key schedule used by every encryption round.
 
 <p align="center">
-  <img src="images/modules/aes_key_expansion.png" width="700">
+  <img src="images/architecture/Key Expansion of AES-128.png" width="700">
 </p>
 
 ---
@@ -120,7 +120,7 @@ Generates the complete AES-128 key schedule used by every encryption round.
 Implements the nonlinear byte substitution stage using the AES S-Box.
 
 <p align="center">
-  <img src="images/modules/Sub-Bytes.png" width="700">
+  <img src="images/architecture/Sub-Bytes.png" width="700">
 </p>
 
 ---
@@ -130,7 +130,7 @@ Implements the nonlinear byte substitution stage using the AES S-Box.
 Performs Galois Field (GF(2⁸)) matrix multiplication to provide diffusion across each column of the AES state matrix.
 
 <p align="center">
-  <img src="images/modules/Mix-Coloumn.png" width="700">
+  <img src="images/architecture/Mix-Coloumn.png" width="700">
 </p>
 
 ---
