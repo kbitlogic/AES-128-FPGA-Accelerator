@@ -88,7 +88,7 @@ Ciphertext
 The AES encryption engine follows a hierarchical RTL implementation in Verilog HDL. The top-level module integrates the Key Expansion unit with the encryption datapath consisting of SubBytes, ShiftRows, MixColumns, and AddRoundKey transformations.
 
 <p align="center">
-  <img src="images/architecture/aes_schematic.png" width="950">
+  <img src="images/architecture/Architecture of AES-128" width="950">
 </p>
 
 ---
@@ -98,7 +98,7 @@ The AES encryption engine follows a hierarchical RTL implementation in Verilog H
 The Key Expansion module generates the eleven round keys required throughout the AES-128 encryption process by applying byte substitution, word rotation, round constants, and XOR operations.
 
 <p align="center">
-  <img src="images/architecture/key_expansion_block_diagram.jpeg" width="850">
+  <img src="images/architecture/Key Expansion of AES-128.jpeg" width="850">
 </p>
 
 ---
@@ -120,7 +120,7 @@ Generates the complete AES-128 key schedule used by every encryption round.
 Implements the nonlinear byte substitution stage using the AES S-Box.
 
 <p align="center">
-  <img src="images/modules/aes_sub_bytes.png" width="700">
+  <img src="images/modules/Sub-Bytes.png" width="700">
 </p>
 
 ---
@@ -130,7 +130,7 @@ Implements the nonlinear byte substitution stage using the AES S-Box.
 Performs Galois Field (GF(2⁸)) matrix multiplication to provide diffusion across each column of the AES state matrix.
 
 <p align="center">
-  <img src="images/modules/aes_mix_columns.png" width="700">
+  <img src="images/modules/Mix-Coloumn.png" width="700">
 </p>
 
 ---
